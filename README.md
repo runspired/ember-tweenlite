@@ -1,26 +1,21 @@
-# Ember-tweenlite
+Ember-tweenlite
+===============
 
-This README outlines the details of collaborating on this Ember addon.
+[![npm version](https://badge.fury.io/js/ember-tweenlite.svg)](http://badge.fury.io/js/ember-tweenlite)
+[![Build Status](https://travis-ci.org/runspired/ember-tweenlite.svg)](https://travis-ci.org/runspired/ember-tweenlite)
 
-## Installation
+Installs `gsap` and exposes `tweenlite` to your project.  It will import the minified
+version for production builds only, and won't import anything if your app is running
+in `fastboot`.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+## Usage
 
-## Running
+```cli
+ember install ember-tweenlite
+```
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Then in your app or addon's module.
+```js
+import TweenLite from 'tweenlite';
+```
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
