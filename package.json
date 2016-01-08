@@ -1,6 +1,6 @@
 {
   "name": "ember-tweenlite",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Enables using GSAP's TweenLite Animation Library.",
   "directories": {
     "doc": "doc",
