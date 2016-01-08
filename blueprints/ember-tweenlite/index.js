@@ -5,7 +5,7 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function() {
-    this.addBowerPackageToProject('gsap', '1.18.2');
+    return this.addBowerPackageToProject('gsap', '1.18.2');
   }
 
 };
