@@ -30,8 +30,10 @@ module.exports = {
     if (!process.env.EMBER_CLI_FASTBOOT) {
       if (app.env === "production") {
         app.import(app.bowerDirectory + '/gsap/src/minified/TweenLite.min.js', { prepend: true });
+        app.import(app.bowerDirectory + '/gsap/src/minified/plugins/CSSPlugin.min.js', { prepend: true });
       } else {
         app.import(app.bowerDirectory + '/gsap/src/uncompressed/TweenLite.js', { prepend: true });
+        app.import(app.bowerDirectory + '/gsap/src/uncompressed/plugins/CSSPlugin.js', { prepend: true });
       }
     }
 
